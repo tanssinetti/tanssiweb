@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" class="wide wow-animation smoothscroll scrollTo"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/tanssinet1}">
+
+<head>
+    <!-- Site Title-->
+    <title>About Us</title>
+
+</head>
+<body>
+<!-- Page-->
+<div class="page text-center">
+    <!-- Page Header-->
+    <header class="page-head">
+        <!-- RD Navbar Transparent-->
+        <div class="rd-navbar-wrap">
+            <nav data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-offset="120" class="rd-navbar rd-navbar-default" data-lg-auto-height="true" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                        <div class="rd-navbar-panel-title veil-md reveal-inline-block">
+                            <h4>About Us</h4>
+                        </div>
+                        <!-- RD Navbar Right Side Toggle-->
+                        <button data-rd-navbar-toggle=".right-side" class="rd-navbar-right-side-toggle veil-md"><span></span></button>
+                        <div class="shell">
+                            <div class="range range-md-middle">
+                                <div class="cell-md-3 left-side">
+                                    <div class="clearfix text-md-left text-center">
+                                        <!--Navbar Brand-->
+                                        <div class="rd-navbar-brand"><a href="index.html"><img width='229' height='48' src='images/logo-light-229x48.png' alt=''/></a></div>
+                                    </div>
+                                </div>
+                                <div class="cell-md-9 text-md-right right-side">
+                                    <ul class="list-unstyled">
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-email text-middle"></span><a href="mailto:#" class="inset-left-10 text-middle text-light">info@demolink.org</a></li>
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-clock text-middle"></span><span class="inset-left-10 text-middle text-light">Mon–Sat: 7:00–19:00</span></li>
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-phone text-middle"></span><a href="callto:#" class="inset-left-10 text-middle text-light">1-800-1234-567</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-menu-wrap">
+                        <div class="shell">
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-mobile-scroll">
+                                    <div class="rd-navbar-mobile-header-wrap">
+                                        <!--Navbar Brand Mobile-->
+                                        <div class="rd-navbar-mobile-brand"><a href="index.html"><img width='229' height='48' src='images/logo-light-229x48.png' alt=''/></a><a data-custom-toggle="rd-navbar-search-mobile" href="#" class="rd-navbar-mobile-search-toggle mdi"><span></span></a></div>
+                                        <!--RD Navbar Mobile Search-->
+                                        <div id="rd-navbar-search-mobile" class="rd-navbar-search-mobile">
+                                            <form action="search-results.html" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                                                <div class="form-group">
+                                                    <label for="rd-navbar-mobile-search-form-input" class="form-label">Search</label>
+                                                    <input id="rd-navbar-mobile-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li><a href="index.html">Home</a>
+                                        </li>
+                                        <li><a href="gallery-masonry.html">Vehicle Gallery</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="gallery-masonry.html">Masonry Grid</a>
+                                                </li>
+                                                <li><a href="gallery-grid-3-columns.html">Grid With Padding</a>
+                                                </li>
+                                                <li><a href="gallery-grid-3-columns-fullwidth.html">Grid With No Padding</a>
+                                                </li>
+                                                <li><a href="gallery-cobbles.html">Cobbles Grid</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" tabs-nav"><a href="services.html">Services</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="services.html#0">History Check</a>
+                                                </li>
+                                                <li><a href="services.html#1">Buyers Guide</a>
+                                                </li>
+                                                <li><a href="services.html#2">Car Check</a>
+                                                </li>
+                                                <li><a href="services.html#3">Car Insurance</a>
+                                                </li>
+                                                <li><a href="services.html#4">Customer Support</a>
+                                                </li>
+                                                <li><a href="services.html#5">Warranty Programs</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" active"><a href="#">Pages</a>
+                                            <div class="rd-navbar-megamenu">
+                                                <div class="row section-relative">
+                                                    <div class="col-lg-3 veil reveal-lg-block">
+                                                        <div>
+                                                            <div>
+                                                                <p style="min-height:300px"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="col-lg-3 col-md-4">
+                                                        <li>
+                                                            <h6 class="text-bold text-white">Pages</h6>
+                                                            <ul class="list-unstyled offset-lg-top-25">
+                                                                <li><a href="about-us.html">About Us</a></li>
+                                                                <li><a href="prices.html">Prices</a></li>
+                                                                <li><a href="calculate.html">Calculate</a></li>
+                                                                <li><a href="team.html">Our Team</a></li>
+                                                                <li><a href="services-1.html">Services 1</a></li>
+                                                                <li><a href="services-2.html">Services 2</a></li>
+                                                                <li><a href="team-member.html">Team Member Profile</a></li>
+                                                                <li><a href="404.html">404</a></li>
+                                                                <li><a href="maintenance.html">Maintenance</a></li>
+                                                                <li><a href="comming-soon.html">Coming Soon</a></li>
+                                                                <li><a href="faq.html">FAQs</a></li>
+                                                                <li><a href="clients.html">Clients</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col-lg-3 col-md-4">
+                                                        <li>
+                                                            <h6 class="text-bold text-white">Additional Pages</h6>
+                                                            <ul class="list-unstyled offset-lg-top-25">
+                                                                <li><a href="tabs-and-accordions.html">Tabs &amp; Accordions</a></li>
+                                                                <li><a href="typography.html">Typography</a></li>
+                                                                <li><a href="forms.html">Forms</a></li>
+                                                                <li><a href="buttons.html">Buttons</a></li>
+                                                                <li><a href="grid.html">Grid</a></li>
+                                                                <li><a href="icons.html">Icons</a></li>
+                                                                <li><a href="tables.html">Tables</a></li>
+                                                                <li><a href="progress-bars.html">Progress bars</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col-lg-3 col-md-4">
+                                                        <li>
+                                                            <h6 class="text-bold text-white">Elements</h6>
+                                                            <ul class="list-unstyled offset-lg-top-25">
+                                                                <li><a href="header-transparent.html">Header Transparent</a></li>
+                                                                <li><a href="header-center-footer-light.html">Header Center, Footer Light</a></li>
+                                                                <li><a href="header-minimal-footer-corporate.html">Header Minimal, Footer Corporate</a></li>
+                                                                <li><a href="header-corporate.html">Header Corporate</a></li>
+                                                                <li><a href="header-hamburger-menu.html">Header Hamburger Menu</a></li>
+                                                                <li><a href="footer-center-dark.html">Footer Center Dark</a></li>
+                                                                <li><a href="footer-center-light.html">Footer Center Light</a></li>
+                                                                <li><a href="footer-minimal-dark.html">Footer Minimal Dark</a></li>
+                                                                <li><a href="footer-widget-light.html">Footer Widget Light</a></li>
+                                                                <li><a href="footer-widget-dark.html">Footer Widget Dark</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="blog-default.html">Blog</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="blog-archive.html">Archive Page</a>
+                                                </li>
+                                                <li><a href="blog-2-columns-layout.html">2 Columns Layout</a>
+                                                </li>
+                                                <li><a href="blog-3-column-layout.html">3 Columns Grid Layout</a>
+                                                </li>
+                                                <li><a href="blog-default.html">Default Blog</a>
+                                                </li>
+                                                <li><a href="blog-left-sidebar.html">Left Sidebar</a>
+                                                </li>
+                                                <li><a href="blog-right-sidebar.html">Right Sidebar</a>
+                                                </li>
+                                                <li><a href="blog-timeline.html">Timeline</a>
+                                                </li>
+                                                <li><a href="blog-post-page.html">Post Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contacts.html">Contacts</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="contacts.html">Contacts</a>
+                                                </li>
+                                                <li><a href="contacts-variant-2.html">Contacts 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--RD Navbar Search-->
+                            <div class="rd-navbar-search"><a data-rd-navbar-toggle=".rd-navbar-search" href="#" class="rd-navbar-search-toggle mdi"><span></span></a>
+                                <form action="search-results.html" data-search-live="rd-search-results-live" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                                    <div class="form-group">
+                                        <label for="rd-navbar-search-form-input" class="form-label">Search</label>
+                                        <input id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                        <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- RD Parallax-->
+    <div data-on="false" data-md-on="true" class="rd-parallax">
+        <div data-speed="0.15" data-type="media" data-url="images/backgrounds/breadcrumbs-bg-1920x400.jpg" class="rd-parallax-layer"></div>
+        <div data-speed="0" data-type="html" class="rd-parallax-layer">
+            <!-- Classic Breadcrumbs-->
+            <section class="breadcrumb-classic context-dark">
+                <div class="shell section-60">
+                    <div>
+                        <h2 class="veil reveal-sm-block text-regular">About Us</h2>
+                    </div>
+                    <ul class="list-inline list-inline-lg list-inline-dashed p">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li>About Us
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Page Content-->
+    <main class="page-content">
+        <th:block layout:fragment="content">
+            <section class="section-70 section-md-90">
+                <div class="shell text-sm-left">
+                    <h2>Car search</h2>
+                    <hr class="divider divider-lg bg-primary hr-sm-left-0">
+                    <div class="offset-top-50">
+                        <p>Please complete and submit this form and one of our representatives will reply promptly. Thank You!</p>
+                    </div>
+                    <div class="offset-top-20">
+                        <form method="post" action="bat/rd-mailform.php" data-form-output="form-output-global" class="rd-mailform text-left">
+                            <div class="range range-xs-bottom">
+                                <div class="cell-sm-6 cell-lg-4">
+                                    <div class="form-group">
+                                        <label for="form-car-search-make" class="form-label form-label-outside">Pvm:</label>
+                                        <select id="form-car-search-make" name="make" class="form-control">
+                                            <option value="1">Enter car make...</option>
+                                            <option value="2">Audi</option>
+                                            <option value="3">Acura</option>
+                                            <option value="4">BMW</option>
+                                            <option value="5">Chevrolet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6 cell-lg-4 offset-top-30 offset-sm-top-0">
+                                    <div class="form-group">
+                                        <label for="form-car-search-model" class="form-label form-label-outside">Alue:</label>
+                                        <select id="form-car-search-model" name="model" class="form-control">
+                                            <option value="1">Enter model</option>
+                                            <option value="2">x2 series</option>
+                                            <option value="3">x3 series</option>
+                                            <option value="4">x4 series</option>
+                                            <option value="5">x5 series</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6 cell-lg-4 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-car-search-country" class="form-label form-label-outside">Artisti:</label>
+                                        <select id="form-car-search-country" name="country" class="form-control">
+                                            <option value="1">Ei valintaa</option>
+                                            <option value="2">Top 1 Artisti</option>
+                                            <option value="3">Top 2 Artisti</option>
+                                            <option value="4">Top 3 Artisti</option>
+                                            <option value="5">Top 4 Artisti</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6 cell-lg-4 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-car-search-city" class="form-label form-label-outside">Kaupunki</label>
+                                        <select id="form-car-search-city" name="city" class="form-control">
+                                            <option value="1">Ei Valintaa</option>
+                                            <option value="2">Helsinki + 200 km</option>
+                                            <option value="3">Turku + 200 km</option>
+                                            <option value="4">Tampere + 200 km</option>
+                                            <option value="5">Jyväskylä + 200 km</option>
+                                            <option value="5">Mikkeli + 200 km</option>
+                                            <option value="5">Pori + 200 km</option>
+                                            <option value="5">Oulu + 200 km</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-4 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-car-search-body-type" class="form-label form-label-outside">Body Type:</label>
+                                        <select id="form-car-search-body-type" name="body-type" class="form-control">
+                                            <option value="1">Enter</option>
+                                            <option value="2">Hatchback</option>
+                                            <option value="3">Mini-MPVs</option>
+                                            <option value="4">Crossovers</option>
+                                            <option value="5">Coupes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-2 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-car-search-min-year" class="form-label form-label-outside"> Min Year:</label>
+                                        <input id="form-car-search-min-year" type="text" name="min-year" placeholder="0" data-constraints="@Required @IsNumeric" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-2 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-car-search-max-year" class="form-label form-label-outside"> Max Year:</label>
+                                        <input id="form-car-search-max-year" type="text" name="max-year" placeholder="0" data-constraints="@Required @IsNumeric" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-3 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-quote-color" class="form-label form-label-outside">Color</label>
+                                        <select id="form-quote-color" name="color" class="form-control">
+                                            <option value="1">No</option>
+                                            <option value="2">Black</option>
+                                            <option value="3">White</option>
+                                            <option value="4">Red</option>
+                                            <option value="5">Blue</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-2 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-quote-height" class="form-label form-label-outside"> Min Price:</label>
+                                        <input id="form-quote-height" type="text" name="height" placeholder="0" data-constraints="@Required @IsNumeric" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-2 offset-top-30">
+                                    <div class="form-group">
+                                        <label for="form-quote-width" class="form-label form-label-outside"> Max Price:</label>
+                                        <input id="form-quote-width" type="text" name="width" placeholder="1" data-constraints="@Required @IsNumeric" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-3 cell-lg-2 offset-top-30"><a href="calculate.html" class="btn btn-primary btn-sm">hae</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </th:block>
+    </main>
+    <!-- Page Footer-->
+    <!-- Page Footer-->
+    <footer class="section-90 section-bottom-50 page-footer bg-gray-darkest">
+        <div class="shell">
+            <!--Footer brand--><a href="index.html"><img width='177' height='78' src='images/brand-footer-177x78.png' alt=''/></a>
+            <div class="offset-top-20">
+                <ul class="list-inline list-inline-dark">
+                    <li><a href="#" class="icon icon-xxs fa-facebook"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-twitter"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-pinterest"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-vimeo"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-google"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-rss"></a></li>
+                </ul>
+            </div>
+            <div class="offset-top-20">
+                <p class="text-gray">&copy; <span id="copyright-year"></span> All Rights Reserved Terms of Use and <a href="privacy.html" class="text-dark">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Global Mailform Output-->
+<div id="form-output-global" class="snackbars"> </div>
+<!-- PhotoSwipe Gallery-->
+<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                <button title="Share" class="pswp__button pswp__button--share"></button>
+                <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+            <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Java script-->
+<script th:src="@{/js/core.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

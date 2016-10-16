@@ -1,0 +1,208 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" class="wide wow-animation smoothscroll scrollTo">
+
+<head>
+    <!-- Site Title-->
+    <title>Tanssinetti</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="tanssi lavatanssi tanssikurssi tanssinet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700,300,300italic">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script th:src="@{/js/html5shiv.min.js}"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Page-->
+<div class="page text-center">
+    <!-- Page Header-->
+    <header class="page-head header-panel-absolute bg-gray-darkest slider-menu-position">
+        <!-- RD Navbar Transparent-->
+        <div class="rd-navbar-wrap">
+            <nav data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-offset="120" class="rd-navbar rd-navbar-default" data-lg-auto-height="true" data-auto-height="false" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                        <div class="rd-navbar-panel-title veil-md reveal-inline-block">
+                            <h4>Home</h4>
+                        </div>
+                        <!-- RD Navbar Right Side Toggle-->
+                        <button data-rd-navbar-toggle=".right-side" class="rd-navbar-right-side-toggle veil-md"><span></span></button>
+                        <div class="shell">
+                            <div class="range range-md-middle">
+                                <div class="cell-md-3 left-side">
+                                    <div class="clearfix text-md-left text-center">
+                                        <!--Navbar Brand-->
+                                        <div class="rd-navbar-brand"><a href="index.html"><img width='229' height='48' src='/images/logo-light-229x48.png' alt=''/></a></div>
+                                    </div>
+                                </div>
+                                <div class="cell-md-9 text-md-right right-side">
+                                    <ul class="list-unstyled">
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-email text-middle"></span><a href="mailto:#" class="inset-left-10 text-middle text-light">info@demolink.org</a></li>
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-clock text-middle"></span><span class="inset-left-10 text-middle text-light">Mon–Sat: 7:00–19:00</span></li>
+                                        <li class="reveal-md-inline-block"><span class="icon icon-xxs mdi mdi-phone text-middle"></span><a href="callto:#" class="inset-left-10 text-middle text-light">1-800-1234-567</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-menu-wrap">
+                        <div class="shell">
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-mobile-scroll">
+                                    <div class="rd-navbar-mobile-header-wrap">
+                                        <!--Navbar Brand Mobile-->
+                                        <div class="rd-navbar-mobile-brand"><a href="index.html"><img width='229' height='48' src='/images/logo-light-229x48.png' alt=''/></a><a data-custom-toggle="rd-navbar-search-mobile" href="#" class="rd-navbar-mobile-search-toggle mdi"><span></span></a></div>
+                                        <!--RD Navbar Mobile Search-->
+                                        <div id="rd-navbar-search-mobile" class="rd-navbar-search-mobile">
+                                            <form action="search-results.html" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                                                <div class="form-group">
+                                                    <label for="rd-navbar-mobile-search-form-input" class="form-label">Search</label>
+                                                    <input id="rd-navbar-mobile-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class=" active"><a href="index.html">Tanssinet</a>
+                                        </li>
+                                        <li><a href="gallery-masonry.html">Tanssit</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="gallery-masonry.html">Haku</a>
+                                                </li>
+                                                <li><a href="gallery-grid-3-columns.html">Tanssipaikat</a>
+                                                </li>
+                                                <li><a href="gallery-grid-3-columns-fullwidth.html">Esiintyj&auml;t</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" tabs-nav"><a href="services.html">Opetus</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="services.html#0">Haku</a>
+                                                </li>
+                                                <li><a href="services.html#1">Opetuspaikat</a>
+                                                </li>
+                                                <li><a href="services.html#2">Opettajat</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog-default.html">Blogi</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="blog-archive.html">Antti T</a>
+                                                </li>
+                                                <li><a href="blog-2-columns-layout.html">Juhani</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contacts.html">Omat Tiedot</a>
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="contacts.html">Luo Tili</a>
+                                                </li>
+                                                <li><a href="contacts-variant-2.html">Kirjaudu</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--RD Navbar Search-->
+                            <div class="rd-navbar-search"><a data-rd-navbar-toggle=".rd-navbar-search" href="#" class="rd-navbar-search-toggle mdi"><span></span></a>
+                                <form action="search-results.html" data-search-live="rd-search-results-live" method="GET" class="rd-navbar-search-form search-form-icon-right rd-search">
+                                    <div class="form-group">
+                                        <label for="rd-navbar-search-form-input" class="form-label">Search</label>
+                                        <input id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" class="rd-navbar-search-form-input form-control form-control-gray-lightest"/>
+                                        <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Page Content-->
+    <main class="page-content">
+        <section class="section-70 section-md-90" layout:fragment="content">
+            <div class="shell text-sm-left">
+                <h2>The Content</h2>
+                <hr class="divider divider-lg bg-primary hr-sm-left-0">
+
+                <div class="offset-top-50">
+                    <p>Goes Here!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Page Footer-->
+    <footer class="section-90 section-bottom-50 page-footer bg-gray-darkest">
+        <div class="shell">
+            <!--Footer brand--><a href="index.html"><img width='177' height='78' src='/images/brand-footer-177x78.png' alt=''/></a>
+            <div class="offset-top-20">
+                <ul class="list-inline list-inline-dark">
+                    <li><a href="#" class="icon icon-xxs fa-facebook"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-twitter"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-pinterest"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-vimeo"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-google"></a></li>
+                    <li><a href="#" class="icon icon-xxs fa-rss"></a></li>
+                </ul>
+            </div>
+            <div class="offset-top-20">
+                More <a rel="nofollow" href="http://www.templatemonster.com/category/car-dealer-website-templates/" target="_blank">Car Dealer Website Templates at TemplateMonster.com</a>
+                <p class="text-gray">&copy; <span id="copyright-year"></span> All Rights Reserved Terms of Use and <a href="privacy.html" class="text-dark">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Global Mailform Output-->
+<div id="form-output-global" class="snackbars"> </div>
+<!-- PhotoSwipe Gallery-->
+<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                <button title="Share" class="pswp__button pswp__button--share"></button>
+                <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+            <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Java script-->
+<script th:src="@{/js/core.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
